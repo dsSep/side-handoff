@@ -48,7 +48,7 @@ $side-handoff 约300字，重点保留最终方案、兼容约束和下一步。
 其他机器：克隆本仓库后，复制核心 Skill。PowerShell 示例遇到已有安装会停止：
 
 ```powershell
-git clone https://github.com/tianxiangliu-ds/side-handoff.git
+git clone https://github.com/dsSep/side-handoff.git
 $target = Join-Path $HOME '.codex/skills/side-handoff'
 if (Test-Path -LiteralPath $target) { throw '已有安装，请先比较与备份，停止覆盖。' }
 New-Item -ItemType Directory -Path $target -ErrorAction Stop | Out-Null
